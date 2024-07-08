@@ -19,7 +19,10 @@ pipeline {
 		}
 		stage("Build") {
 			steps {
-				sh 'docker build -t flask-jenkins:v1.0.0 .'
+				sh '''
+				docker build -t flask-jenkins:v1.0.0 .
+				docker tag flask-jenkins:v1.0.0 flask-jenkins:latest
+				'''
 			}
 		}
 		stage("test") {
