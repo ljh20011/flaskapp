@@ -6,5 +6,5 @@ spec:
   containers:
   - name: flask
     image: ljh20011/flaskapp
-    ports: 5000
-    - containerPort: 80
+    ports:
+    - containerPort: 5000
