@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
   - name: flask
-    image: ljh20011/flaskapp
+    image: ljh20011/flaskapp:v1.0.0
     ports:
     - containerPort: 5000
